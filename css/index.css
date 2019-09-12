@@ -175,11 +175,28 @@ header {
   padding: 20px 10px;
   border-bottom: 2px dashed grey;
 }
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    padding: 20px 0px 10px 10px;
+  }
+}
 header h1 {
   margin-left: 80px;
 }
+@media (max-width: 500px) {
+  header h1 {
+    margin-left: 0px;
+    padding: 15px;
+  }
+}
 header nav {
   margin-right: 80px;
+}
+@media (max-width: 500px) {
+  header nav {
+    margin-right: 0px;
+  }
 }
 header a {
   padding: 20px;
@@ -187,12 +204,22 @@ header a {
   color: black;
   font-size: 1.3rem;
 }
+@media (max-width: 500px) {
+  header a {
+    padding: 0px 32px;
+  }
+}
 .bus {
   width: 80%;
   display: flex;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
+}
+@media (max-width: 500px) {
+  .bus {
+    width: 90%;
+  }
 }
 .footer {
   width: 100%;

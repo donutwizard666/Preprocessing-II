@@ -170,23 +170,31 @@ img {
 }
 header {
   display: flex;
+  border: 1px solid blue;
   justify-content: space-between;
   align-items: center;
-  margin: 20px 60px;
-  padding: 20px 0;
-  border-bottom: 1px dashed green;
+  padding: 20px 10px;
+  border-bottom: 1px dashed grey;
+}
+header h1 {
+  margin-left: 80px;
 }
 header nav {
   border: 1px solid blue;
+  margin-right: 80px;
 }
 header a {
-  margin-right: 60px;
+  padding: 20px;
   text-decoration: none;
   color: black;
+  font-size: 1.3rem;
 }
-header img {
-  width: 85%;
-  border: 1px solid black;
+.bus {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 .footer {
   width: 100%;

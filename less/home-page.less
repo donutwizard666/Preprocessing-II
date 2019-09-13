@@ -1,3 +1,7 @@
+//Escaped Values//
+
+@mobile: ~"(max-width: 500px)";
+
 .home {
 
   .welcome {
@@ -5,6 +9,16 @@
     flex-direction: column;
     padding: 20px 0;
     border-bottom: 2px dashed grey;
+    // border: 4px solid blue;
+
+    @media @mobile {
+      padding: 15px 25px;
+      width: 90%;
+      margin: 5px 0px;
+      margin-left: 20px; //THIS IS WHERE THE DOTTED LINE IS CORRECT/
+      
+    }
+
   }
 
   .content-section {
@@ -12,20 +26,49 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    // border: 4px solid blue;
 
+    @media @mobile {
+      flex-direction: column;
+      margin: 0;
+    
+    }
+    
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+      
+      }
+
+
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      
+
+      @media @mobile {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 0px 15px;
+       
+
+         
+      }
 
       img {
         border-radius: 10px;
+        width: 100%;
       }
     }
   }
@@ -33,24 +76,66 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    // border: 4px solid black; //
+    
+
+    @media @mobile {
+      display: flex;
+      flex-direction: column-reverse;
+      width: 90%;
+      margin-left: 25px;
+ 
+    }
 
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+      
+
+      @media @mobile {
+        // padding: 10px 25px;
+        width: 100%;
+        // margin: 10px 0px;
+        
+      
+      }
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+      // border: 2px solid black;
+
+
+      @media @mobile {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 0px 0px;
+        // margin: 15px;
+   
+      }
+
     }
   }
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    // border: 1px solid black;
+
+    @media @mobile {
+      padding: 15px 25px;
+      width: 100%;
+      margin: 10px 0px;
+
+      
+
+    }
 
     img {
       border-radius: 10px;
+      width: 100%;
     }
 
 
@@ -61,10 +146,28 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    
+
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+      // align-items: flex-start;
+      width: 90%;
+      // border: 1px solid black; //border is now correct//
+      margin-left: 25px;
+
+      
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      // border: 1px solid black;
+
+      @media @mobile {
+        width: 100%;
+        padding: 10px 70px;
+      }
     }
 
     .btn {
